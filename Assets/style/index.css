@@ -1,0 +1,252 @@
+/* Font Injection */
+@font-face {
+    font-family: 'Airbnb Cereal App Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Book'), url('../font/AirbnbCerealBook.woff') format('woff');
+    }
+        
+@font-face {
+    font-family: 'Airbnb Cereal App Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Light'), url('../font/AirbnbCerealLight.woff') format('woff');
+    }
+    
+    
+@font-face {
+    font-family: 'Airbnb Cereal App Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Medium'), url('../font/AirbnbCerealMedium.woff') format('woff');
+    }
+    
+    
+@font-face {
+    font-family: 'Airbnb Cereal App Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Bold'), url('../font/AirbnbCerealBold.woff') format('woff');
+    }
+    
+    
+@font-face {
+    font-family: 'Airbnb Cereal App Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Extra Bold'), url('../font/AirbnbCerealExtraBold.woff') format('woff');
+    }
+    
+    
+@font-face {
+    font-family: 'Airbnb Cereal App Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Black'), url('../font/AirbnbCerealBlack.woff') format('woff');
+    }
+
+/* Body Area */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Airbnb Cereal App Book', sans-serif;
+    height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #FCD88C;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+/* Jumbotron */
+.jumbotron-fluid {
+    background-color: #FCD88C;
+    height: 115vh;
+    border-radius: 0% 0% 100% 47% / 0% 38% 100% 17% ;
+}
+
+.body-jumbotron {
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+
+.bg-image {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 600px;
+    height: 600px;
+    background-image: url(../img/Bg-landingpage.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.bg-leaf1 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 130px;
+    height: 130px;
+    background-image: url(../img/mint1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(280deg);
+}
+
+.bg-leaf2 {
+    position: absolute;
+    right: 500px;
+    top: 500px;
+    width: 130px;
+    height: 130px;
+    background-image: url(../img/mint2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(290deg);
+}
+
+.bg-leaf3 {
+    position: absolute;
+    left: 0;
+    top: 130px;
+    width: 90px;
+    height: 90px;
+    background-image: url(../img/mint2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(120deg);
+    opacity: 0.7;
+}
+
+.bg-leaf4 {
+    position: absolute;
+    left: 260px;
+    top: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/mint2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(190deg);
+    opacity: 0.1;
+}
+
+/* Section Service */
+.title-section{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#service {
+    position: absolute;
+    left: 60px;
+    top: 570px;
+    width: 70%;
+}
+
+.card-service {
+    cursor: pointer;
+}
+
+.service-name {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon-service {
+    padding: 5px;
+    font-size: 30px;
+}
+
+/*Section About */
+.galery-about1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 0% 100% 100% 100% / 100% 60% 0% 60% ;
+    background-image: url(../img/galery1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galery-about2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100% 100% 100% 0% / 60% 0% 60% 0% ;
+    background-image: url(../img/galery2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galery-about3 {
+    width: 250px;
+    height: 200px;
+    border-radius: 60% 0% 60% 100% / 60% 100% 100% 0% ;
+    background-image: url(../img/galery3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galery-about4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 0% 60% 61% 100% / 0% 60% 0% 59%  ;
+    background-image: url(../img/galery4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 800px;
+    right: 0;
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.521), rgb(255, 225, 159));
+    border-radius: 50%;
+}
+
+.circle-outer {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 760px;
+    right: 0;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 225, 159);
+}
+
+/* Carousel */
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 246, 246);
+    box-shadow: 2px 2px 5px rgb(175, 175, 175);
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.521), rgb(255, 225, 159));
+}
+
+.footer .fab {
+    color: var(--warning);
+    font-size: 30px;
+    margin: 10px;
+}

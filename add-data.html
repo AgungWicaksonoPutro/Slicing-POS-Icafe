@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Add Data</title>
+    <link rel="stylesheet" href="./Assets/style/css.css">
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-9 bg-white shadow-sm">
+          <nav class="navbar">
+            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="#" class="navbar-brand">Food Items</a>
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+        <div class="col-3 bg-white d-flex justify-content-center align-items-center shadow-sm">
+          <p class="cart-nav">Cart <span class="badge badge-pill badge-info">0</span></p>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-1 bg-white">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active fork" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link history" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link add-data" data-toggle="modal" data-target="#add-data"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-8 bg-light border">
+          <div class="container d-flex flex-wrap">
+            <div class="card bg-transparent">
+              <img src="./Assets/img/blackforest.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Espresso</p>
+                <h6>Rp. 10.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/bear.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Coffe Latte</p>
+                <h6>Rp. 15.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/firdaus-roslan-pN769u0KHNA-unsplash.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Cappucino</p>
+                <h6>Rp. 5.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/redvelvet.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Velvet Latte</p>
+                <h6>Rp. 33.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/chocorum.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Choco Rhum</p>
+                <h6>Rp. 28.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/blackforest.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Black Forest</p>
+                <h6>Rp. 30.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/chickenkatsu.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Chicken Katsu Dabu-dabu</p>
+                <h6>Rp. 60.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/salmon.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Salmon Truffle Teriyaki </p>
+                <h6>Rp. 60.000</h6>
+              </div>
+            </div>
+            <div class="card bg-transparent">
+              <img src="./Assets/img/wiener.png" class="card-img-top" alt="blackforest">
+              <div class="card-body">
+                <p class="card-text">Wiener Schnitzel </p>
+                <h6>Rp. 60.000</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 bg-white border-top d-flex justify-content-center align-items-start">
+          <div class="cart-empty">
+            <img src="./Assets/img/food-and-restaurant.png" alt="">
+            <h5>Your cart is empty</h5>
+            <p>Please add some items from the menu </p>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="add-data" tabindex="-1" role="dialog" aria-labelledby="add-data" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="container header">
+                <div class="title">Add Data</div>
+              </div>
+              <div class="container body-content">
+                <div class="form add-data d-flex justify-content-center align-items-center">
+                    <div class="col-2 label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-10 input name">
+                        <input type="text" class="form-control shadow-sm" name="name" id="name">
+                    </div>
+                </div>
+                <div class="form add-data d-flex justify-content-center align-items-center">
+                    <div class="col-2 label">
+                        <label for="img">Image</label>
+                    </div>
+                    <div class="col-10 input img">
+                        <input type="text" class="form-control shadow-sm" name="img" id="img">
+                    </div>
+                </div>
+                <div class="form add-data d-flex justify-content-center align-items-center">
+                    <div class="col-2 label">
+                        <label for="price">Price</label>
+                    </div>
+                    <div class="col-10 input price">
+                        <input type="text" class="form-control shadow-sm" name="price" id="price">
+                    </div>
+                </div>
+                <div class="form add-data d-flex justify-content-center align-items-center">
+                    <div class="col-2 label">
+                        <label for="category">Category</label>
+                    </div>
+                    <div class="col-10 input category">
+                        <select class="form-control shadow-sm" id="category">
+                            <option>Category</option>
+                          </select>
+                    </div>
+                </div>
+              </div>
+              <div class="container control-modal d-flex">
+                <button type="button" class="btn btn-danger">Cancel</button>
+                <button type="button" class="btn btn-primary">Add</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/f71da54294.js"></script>
+  </body>
+</html>
