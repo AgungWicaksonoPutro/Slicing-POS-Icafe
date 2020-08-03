@@ -193,6 +193,19 @@ main .card h6{
     font-weight: bold;
 }
 
+.add-cart .control-min, .control-max {
+    color: #82DE3A;
+    background: rgba(130, 222, 58, 0.2);
+    border: 1px solid #82DE3A;
+}
+
+.add-cart .control-num {
+    color: #82DE3A;
+    background: #FFFFFF;
+    border: 1px solid #82DE3A;
+}
+
+
 .deals {
     width: 100%;
     height: 30vh;
